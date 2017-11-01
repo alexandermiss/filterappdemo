@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<style>
+  body{
+    font-family: Arial;
+  }
+  .container{
+    width: 600px;
+    margin: auto;
+  }
+  .text-center{
+    text-align:center;
+  }
+  ul{
+    line-height: 2.1;
+  }
+</style>
+
+  <div class="container">
+    <h1 class="text-center">Django filters demo</h1>
+
+    <ul>
+      <li>Run the app with <code>$ python3 manage.py runserver</code></li>
+      <li>
+        In your browser, see
+        <a href="http://localhost:8000/api/v1/products">Product api</a>
+      </li>
+      <li>Click the button filter</li>
+      <li>Fill the name field with the word 'Cafe'</li>
+      <li>
+        The filter is case-sensitive. Coffee and coffee is different in the results.
+      </li>
+    </ul>
+
+    <p class="text-center"><b>Enjoy!</b></p>
+  </div>
+
+{% endblock %}
